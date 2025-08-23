@@ -12,7 +12,8 @@
   padding: 30px 40px;
   margin-bottom: 0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
+  width: 100vw;
+} 
 
 .dashboard-header h1 {
   margin: 0 0 25px 0;
@@ -26,7 +27,7 @@
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
-  max-width: 1200px;
+  width: 100%; 
   margin: 0 auto;
 }
 
@@ -53,28 +54,33 @@
 
 .charts-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 30px;
   padding: 40px;
-  max-width: 1600px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
 }
+
 
 .chart-item {
   background: white;
   border-radius: 12px;
   padding: 25px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  height: 500px;
+  min-height: 500px;   /* allow bigger but not locked */
+  width: 100%;         /* stretch horizontally */
   display: flex;
   flex-direction: column;
 }
 
+
 .dashboard-summary {
   background: white;
   padding: 40px;
-  margin: 0 auto;
-  max-width: 1600px;
+  margin: 0 ;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .dashboard-summary h2 {
@@ -89,8 +95,9 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 25px;
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 100%; 
+  margin: 0 ;
+  box-sizing: border-box;
 }
 
 .summary-card {
@@ -117,7 +124,7 @@
 }
 
 /* Responsive Design */
-@media (max-width: 1200px) {
+@media (width: 100%) {
   .charts-grid {
     grid-template-columns: 1fr;
     gap: 25px;
@@ -129,7 +136,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (width: 100%) {
   .dashboard-header {
     padding: 20px;
   }
@@ -183,7 +190,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (width: 100%) {
   .dashboard-header h1 {
     font-size: 1.5rem;
   }
