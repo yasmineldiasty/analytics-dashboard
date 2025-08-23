@@ -28,7 +28,10 @@ A responsive React dashboard showing analytics data with interactive charts and 
 
 1. Clone the repository:
 ```bash
-git clone <https://github.com/yasmineldiasty/analytics-dashboard.git>
+git clone https://github.com/yasmineldiasty/analytics-dashboard.git
+```
+
+```bash
 cd analytics-dashboard
 ```
 
