@@ -8,7 +8,7 @@ import "../styles/Dashboard.css";
 
 const Dashboard: React.FC = () => {
   const [dateRange, setDateRange] = useState<DateRange>({
-    startDate: new Date(Date.now() - 7 * 24 * 60 * 60 * 1000), // 7 days ago
+    startDate: new Date(Date.now() - 7 * 24 * 60 * 60 * 1000), 
     endDate: new Date(),
   });
 

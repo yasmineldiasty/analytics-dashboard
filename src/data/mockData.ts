@@ -65,6 +65,6 @@ export const getFilteredData = (startDate: Date, endDate: Date) => {
 
   return {
     dailyUsers: filteredDailyUsers,
-    demographics: mockData.demographics, // Demographics remain the same for simplicity
+    demographics: mockData.demographics,
   };
 };

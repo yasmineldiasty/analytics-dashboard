@@ -68,8 +68,8 @@
   border-radius: 12px;
   padding: 25px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  min-height: 500px;   /* allow bigger but not locked */
-  width: 100%;         /* stretch horizontally */
+  min-height: 500px;   
+  width: 100%;        
   display: flex;
   flex-direction: column;
 }
@@ -123,7 +123,7 @@
   font-weight: 700;
 }
 
-/* Responsive Design */
+
 @media (width: 100%) {
   .charts-grid {
     grid-template-columns: 1fr;
