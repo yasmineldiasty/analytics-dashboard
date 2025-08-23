@@ -55,6 +55,8 @@ docker build -t analytics-dashboard .
 2. Run Docker Container
 ```bash
 docker run -p 3000:80 analytics-dashboard
+```
+```bash
 docker run -d -p 3000:80 --name analytics-app analytics-dashboard
 ```
 
