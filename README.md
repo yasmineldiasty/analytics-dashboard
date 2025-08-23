@@ -77,5 +77,4 @@ After the above steps , Scan the appeared QR Code with an Android Mobile
 Run this command if it doesn't appear :
 ```bash
 npm run dev -- --host 0.0.0.0 --port 5173
-docker run -p 3000:80 analytics-dashboard
 ```
