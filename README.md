@@ -66,3 +66,7 @@ docker run -d -p 3000:80 --name analytics-app analytics-dashboard
 3. Access the Application
 Open your browser and navigate to: http://localhost:3000
 
+
+### Picture of the Dashboard 
+![Screenshot](./images/image.png)
+
