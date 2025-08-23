@@ -60,19 +60,12 @@ git clone https://github.com/yasmineldiasty/analytics-dashboard.git
 cd analytics-dashboard
 ```
 
-2. Build Docker Image
+2. Build Docker Image and Run the docker container 
 ```bash
-docker build -t analytics-dashboard .
-```
-3. Run Docker Container
-```bash
-docker run -p 3000:80 analytics-dashboard
-```
-```bash
-docker run -d -p 3000:80 --name analytics-app analytics-dashboard
+docker build -t analytics-dashboard . && docker run -p 3000:80 analytics-dashboard
 ```
 
-4. Access the Application
+3. Access the Application
 Open your browser and navigate to: http://localhost:3000
 
 
