@@ -30,3 +30,34 @@ A responsive React dashboard showing analytics data with interactive charts and 
 ```bash
 git clone <https://github.com/yasmineldiasty/analytics-dashboard.git>
 cd analytics-dashboard
+```
+
+2. Install Dependencies:
+```bash
+npm install
+```
+
+3. Start Development Server
+```bash
+npm run dev
+```
+
+4. Access the Application
+Open your browser and navigate to: http://localhost:5173
+
+
+### Method 2: Using Docker
+Open Docker Desktop App in the Background
+1. Build Docker Image
+```bash
+docker build -t analytics-dashboard .
+```
+2. Run Docker Container
+```bash
+docker run -p 3000:80 analytics-dashboard
+docker run -d -p 3000:80 --name analytics-app analytics-dashboard
+```
+
+3. Access the Application
+Open your browser and navigate to: http://localhost:3000
+
